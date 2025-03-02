@@ -1,0 +1,16 @@
+{
+  "name": "docker4wordpress",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://github.com/wodby/docker4wordpress/workflows/Run%20tests/badge.svg)](https://github.com/wodby/docker4wordpress/actions)",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "sudo docker compose -f compose.yml -f compose.override.yml up --remove-orphans",
+    "stop": "sudo docker compose down",
+    "restart": "npm run stop && npm run start"
+  },
+  "author": "",
+  "license": "ISC"
+}
